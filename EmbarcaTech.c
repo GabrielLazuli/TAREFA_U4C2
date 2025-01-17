@@ -8,6 +8,7 @@ void test_keypad()
 
     while (1)
     {
+        sleep_ms(50);
         char key = read_keypad();
         if (key != '\0')
         {
