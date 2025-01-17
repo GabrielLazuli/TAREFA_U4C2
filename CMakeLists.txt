@@ -63,7 +63,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(EmbarcaTech EmbarcaTech.c )
+add_executable(EmbarcaTech EmbarcaTech.c)
 
 pico_set_program_name(EmbarcaTech "EmbarcaTech")
 pico_set_program_version(EmbarcaTech "0.1")
@@ -74,17 +74,16 @@ pico_enable_stdio_usb(EmbarcaTech 0)
 
 # Add the standard library to the build
 target_link_libraries(EmbarcaTech
-        pico_stdlib)
+    pico_stdlib
+)
 
 # Add the standard include files to the build
 target_include_directories(EmbarcaTech PRIVATE
-  ${CMAKE_CURRENT_LIST_DIR}
+    ${CMAKE_CURRENT_LIST_DIR}
 )
 
 # Add any user requested libraries
-target_link_libraries(EmbarcaTech 
-        
-        )
+target_link_libraries(EmbarcaTech
+)
 
 pico_add_extra_outputs(EmbarcaTech)
-
