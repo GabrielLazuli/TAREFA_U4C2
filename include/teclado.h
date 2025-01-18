@@ -13,7 +13,7 @@ uint rows[4] = {8, 7, 6, 5}; // linhas do teclado
 char KEY_MAP[16] = { '1', '2', '3', 'A',
                      '4', '5', '6', 'B',
                      '7', '8', '9', 'C',
-                     '*', '0', '#', 'C' };
+                     '*', '0', '#', 'D' };
 
 // função de configuração dos pinos (colunas e linhas)
 void setup_keypad()
