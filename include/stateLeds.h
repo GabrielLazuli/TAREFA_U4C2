@@ -28,24 +28,57 @@ void setup_leds() {
 void leds(char key) {
     switch (key) {
         case 'A': // LED vermelho
-            gpio_put(LED_RED, 1);
-        break;
+            if (led_state_red == 0) {
+                gpio_put(LED_RED, 1);  // Liga o LED vermelho
+                led_state_red = 1;     // Atualiza o estado
+            } else {
+                gpio_put(LED_RED, 0);  // Desliga o LED vermelho
+                led_state_red = 0;     // Atualiza o estado
+            }
+            break;
         case 'B': // LED verde
-            gpio_put(LED_GREEN, 1);
-        break;
+            if (led_state_green == 0) {
+                gpio_put(LED_GREEN, 1);  // Liga o LED verde
+                led_state_green = 1;     // Atualiza o estado
+            } else {
+                gpio_put(LED_GREEN, 0);  // Desliga o LED verde
+                led_state_green = 0;     // Atualiza o estado
+            }
+            break;
         case 'C': // LED azul
-            gpio_put(LED_BLUE, 1);
-        break;
-        case 'D': // Todos os LEDs acesos
-            gpio_put(LED_RED, 1);
-            gpio_put(LED_GREEN, 1);
-            gpio_put(LED_BLUE, 1);
-        break;
+            if (led_state_blue == 0) {
+                gpio_put(LED_BLUE, 1);  // Liga o LED azul
+                led_state_blue = 1;     // Atualiza o estado
+            } else {
+                gpio_put(LED_BLUE, 0);  // Desliga o LED azul
+                led_state_blue = 0;     // Atualiza o estado
+            }
+            break;
+        case 'D': // Todos os LEDs
+            if (led_state_red == 0 && led_state_green == 0 && led_state_blue == 0) {
+                gpio_put(LED_RED, 1);   // Liga todos os LEDs
+                gpio_put(LED_GREEN, 1);
+                gpio_put(LED_BLUE, 1);
+                led_state_red = 1;
+                led_state_green = 1;
+                led_state_blue = 1;
+            } else {
+                gpio_put(LED_RED, 0);   // Desliga todos os LEDs
+                gpio_put(LED_GREEN, 0);
+                gpio_put(LED_BLUE, 0);
+                led_state_red = 0;
+                led_state_green = 0;
+                led_state_blue = 0;
+            }
+            break;
         case '0': // Desliga todos os LEDs
             gpio_put(LED_RED, 0);
             gpio_put(LED_GREEN, 0);
             gpio_put(LED_BLUE, 0);
-        break;
+            led_state_red = 0;
+            led_state_green = 0;
+            led_state_blue = 0;
+            break;
     }
 }
 
