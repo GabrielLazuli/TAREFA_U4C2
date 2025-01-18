@@ -6,8 +6,8 @@
 #include "hardware/timer.h"
 
 // definição dos pinos que serão conectados as colunas/linhas do teclado matricial
-uint columns[4] = {4, 3, 2, 1}; // colunas do teclado
-uint rows[4] = {8, 7, 6, 5}; // linhas do teclado
+uint columns[4] = {16, 9, 8, 4};
+uint rows[4] = {17, 18, 19, 20};
 
 // mapeamento das teclas
 char KEY_MAP[16] = { '1', '2', '3', 'A',
