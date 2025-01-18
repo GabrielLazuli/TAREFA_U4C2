@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "include/teclado.h"
+#include "include/buzzer.h"
 
 void test_keypad()
 {
     setup_keypad();
+    setup_buzzer();  // Configura o buzzer
 
     while (1)
     {
@@ -13,6 +15,11 @@ void test_keypad()
         if (key != '\0')
         {
             printf("Tecla pressionada: %c\n", key);
+
+            // Quando a tecla '#' for pressionada, acionamos o buzzer
+            if (key == '#') {
+                buzzer_beep(1000, 500);   // Frequência de 1000Hz por 500ms
+            }
         }
     }
 }
