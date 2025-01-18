@@ -69,14 +69,14 @@
     [ "pico:GP21", "bz1:2", "green", [ "h0" ] ],
     [ "r2:1", "pico:GND.4", "green", [ "h-28.8", "v57.6", "h182.4", "v-76.84" ] ],
     [ "r3:1", "pico:GND.4", "green", [ "h-28.8", "v19.2", "h182.4", "v-76.84" ] ],
-    [ "pico:GP8", "keypad1:R1", "green", [ "h0" ] ],
-    [ "pico:GP7", "keypad1:R2", "green", [ "h0" ] ],
-    [ "pico:GP6", "keypad1:R3", "green", [ "h0" ] ],
-    [ "pico:GP5", "keypad1:R4", "green", [ "h0" ] ],
-    [ "pico:GP4", "keypad1:C1", "green", [ "h0" ] ],
-    [ "pico:GP3", "keypad1:C2", "green", [ "h0" ] ],
-    [ "pico:GP2", "keypad1:C3", "green", [ "h0" ] ],
-    [ "pico:GP1", "keypad1:C4", "green", [ "h0" ] ]
+    [ "keypad1:R1", "pico:GP17", "green", [ "v288", "h556.8", "v-124.8", "h-57.6" ] ],
+    [ "keypad1:R2", "pico:GP18", "green", [ "v278.4", "h537.2", "v-124.8", "h0", "v-9.6" ] ],
+    [ "keypad1:R3", "pico:GP19", "green", [ "v268.8", "h518.1", "v-134.4" ] ],
+    [ "keypad1:R4", "pico:GP20", "green", [ "v259.2", "h499", "v-134.4" ] ],
+    [ "keypad1:C1", "pico:GP16", "green", [ "v249.6", "h479.9", "v-76.8" ] ],
+    [ "keypad1:C2", "pico:GP9", "green", [ "v0" ] ],
+    [ "keypad1:C3", "pico:GP8", "green", [ "v86.4", "h19.05" ] ],
+    [ "keypad1:C4", "pico:GP4", "green", [ "v0" ] ]
   ],
   "dependencies": {}
 }
