@@ -5,6 +5,19 @@
 #include "pico/stdlib.h"
 #include "include/buzzer.h"
 
+// declaração das funções buzzer.h para não ter nenhum error/aviso
+void sound_pattern_1(void);
+void sound_pattern_2(void);
+void sound_pattern_3(void);
+
+void ringtone_1(void);
+void ringtone_2(void);
+void ringtone_3(void);
+void ringtone_4(void);
+void ringtone_5(void);
+void ringtone_6(void);
+void ringtone_7(void);
+
 // Define os pinos dos LEDs
 #define LED_RED    13
 #define LED_GREEN  11
