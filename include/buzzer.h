@@ -2,6 +2,7 @@
 #define BUZZER_H
 
 #include "pico/stdlib.h"
+#include "include/teclado.h"
 
 // Definir o pino GPIO conectado ao buzzer
 #define BUZZER_PIN 21
@@ -27,4 +28,25 @@ void buzzer_beep(int frequency, int duration_ms) {
     }
 }
 
+// Som para tecla 1
+void sound_pattern_1() {
+    buzzer_beep(800, 200);  // Frequência 800Hz por 200ms
+    sleep_ms(100);          // Pausa entre os beeps
+    buzzer_beep(800, 200);  // Frequência 800Hz por 200ms
+}
+
+// Som para tecla 2
+void sound_pattern_2() {
+    buzzer_beep(1000, 400); // Frequência 1000Hz por 400ms
+    sleep_ms(50);           // Pausa entre os beeps
+    buzzer_beep(1200, 300); // Frequência 1200Hz por 300ms
+}
+
+// Som para tecla 3
+void sound_pattern_3() {
+    for (int i = 0; i < 3; i++) {
+        buzzer_beep(1400, 150); // Frequência 1400Hz por 150ms
+        sleep_ms(100);          // Pausa entre os beeps
+    }
+}
 #endif // BUZZER_H
