@@ -93,6 +93,13 @@ void leds(char key) {
                 gpio_put(LED_GREEN, 0);  // Desliga o LED verde
                 led_state_green = 0;     // Atualiza o estado
             break;
+         case '4': 
+                gipio_put(LED_RED, 1);
+                led_state_red = 1;
+                ringtone_1(); // toque 1
+                gpio_put(LED_GREEN, 0);
+                led_state_red = 0;  
+            break;
         case '0': // Desliga todos os LEDs
             gpio_put(LED_RED, 0);
             gpio_put(LED_GREEN, 0);

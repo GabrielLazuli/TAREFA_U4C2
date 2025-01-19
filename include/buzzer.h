@@ -49,4 +49,22 @@ void sound_pattern_3() {
         sleep_ms(100);          // Pausa entre os beeps
     }
 }
+
+// toque 1 tecla 4
+void ringtone_1() {
+    buzzer_beep(1000, 100);
+    sleep_ms(100);
+    buzzer_beep(1200, 100); 
+    sleep_ms(100);
+    buzzer_beep(1000, 100); 
+    sleep_ms(200);
+    buzzer_beep(1200, 100); 
+    sleep_ms(100);
+    buzzer_beep(1000, 100); 
+    sleep_ms(400);
+}
+
+
+
+
 #endif // BUZZER_H
