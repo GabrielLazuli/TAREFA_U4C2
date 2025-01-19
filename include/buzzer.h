@@ -51,7 +51,8 @@ void sound_pattern_3() {
 }
 
 // toque 1 tecla 4
-void ringtone_1() {
+void ringtone_1() 
+{
     buzzer_beep(1000, 100);
     sleep_ms(100);
     buzzer_beep(1200, 100); 
@@ -62,6 +63,20 @@ void ringtone_1() {
     sleep_ms(100);
     buzzer_beep(1000, 100); 
     sleep_ms(400);
+}
+
+void ringtone_2()
+{
+    buzzer_beep(700, 150);
+    sleep_ms(150);
+    buzzer_beep(900, 150);
+    sleep_ms(150);
+    buzzer_beep(1100, 150);
+    sleep_ms(150);
+    buzzer_beep(900, 150);
+    sleep_ms(150);
+    buzzer_beep(700, 150);
+    sleep_ms(500);
 }
 
 
