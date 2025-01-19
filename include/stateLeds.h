@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include "pico/stdlib.h"
+#include "include/buzzer.h"
 
 // Define os pinos dos LEDs
 #define LED_RED    13
@@ -72,75 +73,35 @@ void leds(char key) {
             }
             break;
         case '1': 
-            
-                gpio_put(LED_RED, 1);  // Liga o LED vermelho
-                led_state_red = 1;     // Atualiza o estado
                 sound_pattern_1();     // Chama uma função de ativar o buzzer
-                gpio_put(LED_RED, 0);  // Desliga o LED vermelho
-                led_state_red = 0;     // Atualiza o estado
             break;
         case '2': 
-                        gpio_put(LED_BLUE, 1);  // Liga o LED azul
-                led_state_blue = 1;     // Atualiza o estado
                 sound_pattern_2();      // Chama uma função de ativar o buzzer
-                gpio_put(LED_BLUE, 0);  // Desliga o LED azul
-                led_state_blue = 0;     // Atualiza o estado
             break;
         case '3': 
-                gpio_put(LED_GREEN, 1);  // Liga o LED verde
-                led_state_green = 1;     // Atualiza o estado
                 sound_pattern_3();       // Chama uma função de ativar o buzzer
-                gpio_put(LED_GREEN, 0);  // Desliga o LED verde
-                led_state_green = 0;     // Atualiza o estado
             break;
         case '4': 
-                gpio_put(LED_RED, 1);
-                led_state_red = 1;
                 ringtone_1(); // toque 1
-                gpio_put(LED_RED, 0);
-                led_state_red = 0;  
             break;
         case '5':
-                gpio_put(LED_BLUE, 1);
-                led_state_blue = 1;
                 ringtone_2();
-                gpio_put(LED_BLUE, 0);
-                led_state_blue = 0;
             break;
         case '6': 
-                gpio_put(LED_GREEN, 1); 
-                led_state_green = 1;     
                 ringtone_3();       
-                gpio_put(LED_GREEN, 0);
-                led_state_green = 0;    
             break;
         case '7':
-                gpio_put(LED_RED, 1);
-                led_state_red = 1;
                 ringtone_4(); // toque 4
-                gpio_put(LED_RED, 0);
-                led_state_red = 0;
             break;  
         case '8':
-                gpio_put(LED_BLUE, 1);
-                led_state_blue = 1;
+
                 ringtone_5();
-                gpio_put(LED_BLUE, 0);
-                led_state_blue = 0;
             break;
-        case '9': 
-                gpio_put(LED_GREEN, 1); 
-                led_state_green = 1;     
-                ringtone_6();       
-                gpio_put(LED_GREEN, 0);
-                led_state_green = 0;    
+        case '9':   
+                ringtone_6();         
             break;
         case '0':
-                gpio_put(LED_RED, 1);
-                led_state_red = 1;
                 ringtone_7();
-                gpio_put(LED_RED, 0);
-                led_state_red = 0;
             break;
         case '*': // Desliga todos os LEDs
             gpio_put(LED_RED, 0);
