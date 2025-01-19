@@ -106,7 +106,18 @@ void ringtone_4()
     buzzer_beep(600, 250);
     sleep_ms(500);   
 }
-
-
+void ringtone_5()
+{
+    buzzer_beep(1300, 100);
+    sleep_ms(100);
+    buzzer_beep(1200, 100);
+    sleep_ms(100);
+    buzzer_beep(1100, 100);
+    sleep_ms(100);
+    buzzer_beep(1200, 100);
+    sleep_ms(100);
+    buzzer_beep(1300, 100);
+    sleep_ms(350);
+}
 
 #endif // BUZZER_H

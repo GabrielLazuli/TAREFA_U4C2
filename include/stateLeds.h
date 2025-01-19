@@ -122,6 +122,11 @@ void leds(char key) {
                 led_state_red = 0;
             break;  
         case '8':
+                gpio_put(LED_BLUE, 1);
+                led_state_blue = 1;
+                ringtone_5();
+                gpio_put(LED_BLUE, 0);
+                led_state_blue = 0;
             break;
         case '0': // Desliga todos os LEDs
             gpio_put(LED_RED, 0);
