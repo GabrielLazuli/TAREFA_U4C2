@@ -10,7 +10,7 @@ Este projeto utiliza o **Raspberry Pi Pico** para controlar LEDs RGB e um buzzer
 
 - **Microcontrolador**: Raspberry Pi Pico ou Raspberry Pi Pico W (opcional)
 - **Placa de Desenvolvimento:** BitDogLab (opcional).
-- **Conta Criada no Wokwi Simulator**: [Wokwi](https://wokwi.com/). (opcional)
+- **Conta Criada no Wokwi Simulator**: [Wokwi](https://wokwi.com/).
 - **Editor de Código**: Visual Studio Code (VS Code).
 - **SDK do Raspberry Pi Pico** configurado no sistema.
 - Ferramentas de build: **CMake** e **Ninja**.
@@ -119,11 +119,10 @@ Após a configuração, todos os componentes estarão prontos para o uso no sist
   - JOSÉ WILSON PASSOS DOS SANTOS JÚNIOR
   - LAÍSE CAFÉ DOS SANTOS
 - **Documentação e Apresentação**:
-  - ANA CARLA MACÁRIO SANTANA (Documentação)
-  - WESLEY NASCIMENTO DOS SANTOS (Apresentação)
+  - ANA CARLA MACÁRIO SANTANA
 
 ---
 
-## Link do Vídeo Ensaio
+## Vídeo Ensaio
 
-*(A ser adicionado posteriormente)*
+Click [AQUI](https://drive.google.com/file/d/1PkaOvecI3rAVzYbiUcZbvl089Nhzlw1m/view?usp=sharing) para acessar o link do video Ensaio
