@@ -116,7 +116,6 @@ Após a configuração, todos os componentes estarão prontos para o uso no sist
   - RAFAEL SOUZA BARBOSA
 - **Controle do Buzzer**:
   - WALLAS FRANÇA SAMPAIO
-- **Integração e Testes**:
   - JOSÉ WILSON PASSOS DOS SANTOS JÚNIOR
   - LAÍSE CAFÉ DOS SANTOS
 - **Documentação e Apresentação**:
