@@ -79,6 +79,19 @@ void ringtone_2()
     sleep_ms(500);
 }
 
+void ringtone_3()
+{
+    buzzer_beep(880, 200);
+    sleep_ms(200);
+    buzzer_beep(1000, 200);
+    sleep_ms(200);
+    buzzer_beep(880, 200);
+    sleep_ms(200);
+    buzzer_beep(1000, 200);
+    sleep_ms(200);
+    buzzer_beep(880, 200);
+    sleep_ms(800);
+}
 
 
 
